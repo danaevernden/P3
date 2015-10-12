@@ -3,7 +3,44 @@
   font-size:50px;
 }
 
-.img{
+.banner{
+  border-style: dashed;
+  border-width: 2px;
+  font-size:80px;
+  background-color: rgb(192,18,11);
+  height:250px;
+  font-family: 'Pacifico', cursive;
+  color: rgb(255,255,255);
+  text-align:center;
+}
 
-  size='width:500px'
+.subbanner{
+  font-size:30px;
+  border-top:5px;
+}
+
+.subsubbanner{
+    background-color:rgb(79,131,189);
+    color: rgb(255,255,255);
+    text-align:center;
+}
+
+.Maincontent{
+  font-family: 'helvetica';
+  font-weight: bold;
+  text-align:center;
+}
+
+
+/*images*/
+.olaf{
+  height:100px;
+}
+
+.button{
+height:50px;
+}
+
+.arrow{
+  height:80px;
 }

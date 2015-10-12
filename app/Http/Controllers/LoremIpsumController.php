@@ -14,14 +14,14 @@ class LoremIpsumController extends Controller {
     * Responds to requests to GET /books
     */
     public function getIndex() {
-        return 'List all the loremipsum';
+        return view('LoremIpsum.index');
     }
 
     /**
      * Responds to requests to GET /books/show/{id}
      */
-    public function getShow($title = null) {
-        return view('Loremipsum.show')->with('title', $title);
+    public function getShow() {
+
     }
 
     /**

@@ -14,15 +14,16 @@ class UserGenController extends Controller {
     * Responds to requests to GET /books
     */
     public function getIndex() {
-        return 'List all the usregen';
+        return view('UserGen.index');
     }
 
     /**
      * Responds to requests to GET /books/show/{id}
      */
-    public function getShow() {
-        return 'Show usergen: ';
-    }
+     public function getShow() {
+
+     }
+
 
     /**
      * Responds to requests to GET /books/create
