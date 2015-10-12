@@ -2,7 +2,7 @@
 
 @section('header')
   <div class="banner">
-    Back to Home
+    Dev's BFF
 
     <div class="subbanner">
       (That's Best Friend Forever)

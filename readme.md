@@ -25,3 +25,8 @@ Features:
 [P3]: <http://p3.danaevernden.com>
 
 [favicon generator]: <http://www.favicon-generator.org/>
+
+// to do
+1. get p3.danaevernden.com working
+2. download 2 packages
+3. add password generator to dev's bff

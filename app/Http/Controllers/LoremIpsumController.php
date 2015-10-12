@@ -21,7 +21,7 @@ class LoremIpsumController extends Controller {
      * Responds to requests to GET /books/show/{id}
      */
     public function getShow() {
-
+      return view('LoremIpsum.show');
     }
 
     /**
