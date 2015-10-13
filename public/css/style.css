@@ -31,6 +31,13 @@
   text-align:center;
 }
 
+.containerpword{
+font-family: "Comic Sans MS";
+margin:auto;
+width:100%;
+text-align:center;
+font-size:16px;
+}
 
 /*images*/
 .olaf{
@@ -43,4 +50,25 @@ height:50px;
 
 .arrow{
   height:80px;
+}
+
+.arrow2{
+  height:110px;
+}
+
+.hatguy{
+  width:20px;
+}
+
+.comic{
+max-width: 100%;
+position: fixed;
+margin-left:8em;
+margin-right:8em;
+}
+
+.polo{
+height: 100px;
+width: 100px;
+align-items:flex-end;
 }

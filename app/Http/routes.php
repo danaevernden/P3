@@ -27,3 +27,4 @@ Route::get('/loremipsum', 'LoremIpsumController@getIndex');
 Route::get('/loremipsum/show', 'LoremIpsumController@getShow');
 Route::get('/usergenerator', 'UserGenController@getIndex');
 Route::get('/usergenerator/show', 'UserGenController@getShow');
+Route::get('/pwordgenerator', 'PwordGenController@getIndex');
