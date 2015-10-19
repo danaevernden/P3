@@ -6,23 +6,31 @@
 .banner{
   border-style: dashed;
   border-width: 2px;
-  font-size:80px;
-  background-color: rgb(192,18,11);
-  height:250px;
+  font-size:70px;
+/*  background-color: rgb(192,18,11);*/
+  background-image: url("/images/snow-background.jpg");
+  height:180px;
   font-family: 'Pacifico', cursive;
-  color: rgb(255,255,255);
+  color: rgb(0,0,0);
   text-align:center;
 }
 
+.bannermaster{
+  font-size:50px;
+}
 .subbanner{
   font-size:30px;
   border-bottom:50px;
+
 }
 
 .subsubbanner{
     background-color:rgb(79,131,189);
     color: rgb(255,255,255);
     text-align:center;
+    border-style:solid;
+    border-width: 2px;
+    border-color: rgb(0,0,0);
 }
 
 .Maincontent{

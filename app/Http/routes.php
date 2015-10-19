@@ -20,11 +20,21 @@ Route::get('practice', function(){
 });
 
 Route::get('/', 'MasterController@getIndex');
-Route::get('/show', 'MasterController@getShow');
-Route::get('/books', 'BookController@getIndex');
-Route::get('/books/show', 'BookController@getShow');
-Route::get('/loremipsum', 'LoremIpsumController@getIndex');
-Route::get('/loremipsum/show', 'LoremIpsumController@getShow');
+
+Route::get('/loremipsum', 'LoremIpsumController@getCreate');
+Route::post('/loremipsum', 'LoremIpsumController@postCreate');
+
 Route::get('/usergenerator', 'UserGenController@getIndex');
-Route::get('/usergenerator/show', 'UserGenController@getShow');
+Route::post('/usergenerator', 'UserGenController@postIndex');
+
 Route::get('/pwordgenerator', 'PwordGenController@getIndex');
+
+/*packages*/
+Route::get('/practice', function() {
+
+    $random = new Rych\Random\Random();
+    return $random->getRandomString(8);
+
+});
+
+Route::get('/logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');

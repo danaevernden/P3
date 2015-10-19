@@ -2,10 +2,11 @@
 
 @section('header')
   <div class="banner">
-    Dev's BFF
-
+    <div class="bannermaster">
+    Do you wanna build an application?
+  </div>
     <div class="subbanner">
-      (That's Best Friend Forever)
+      You'll need the Dev BFF!
     </div>
   </div>
 @stop
@@ -13,10 +14,8 @@
 @section('content')
 <div class="Maincontent">
   <div class="subsubbanner">
-    Do you wanna build an application?
+    (That's best friend forever)
     <img src="/images/olaf.jpg" class="olaf" title="get it?" alt="olaf"/>
-
-    you'll need some help from the Dev BFF!
   </div>
   <br>
 

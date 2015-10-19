@@ -1,5 +1,9 @@
 @extends('Layouts.master')
 
+@section('head')
+  <script src="pwordgenlogic.php"></script>
+@stop
+
 @section('header')
   <div class="banner">
       Password Generator
@@ -11,6 +15,14 @@
 @stop
 
 @section('content')
+
+
+<div class="password">
+  <h1>
+    <?php echo $password ?>
+  </h1>
+</div>
+
 <div class="containerpword">
   <?php
   function keepselection($number, $selectionName){

@@ -10,27 +10,12 @@
 @stop
 
 @section('content')
-<?php
-function keepselection($number, $selectionName){
-      if(isset($_GET[$selectionName]) and $_GET[$selectionName]==$number)
-      {echo "selected='selected'";}
-    }
 
-function keepselectionB($selectionName2){
-  if(isset($_GET[$selectionName2]))
-  {echo "checked='checked'";}
-}
-?>
 
-  <form method='GET' action='index.php' name='numPara'>
-      Number of paragraphs:
-      <br> <br>
-      <input type="submit" value="Generate">
-  </form>
+    
+
 @stop
 
-@section('body')
-@stop
 
 @section('footer')
 <br>

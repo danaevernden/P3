@@ -3,6 +3,7 @@
 namespace P3\Http\Controllers;
 #use P3\Http\Controllers\Controller;
 use P3\Http\Controllers\Controller;
+use Illuminate\Http\Request;
 
 class LoremIpsumController extends Controller {
 
@@ -10,31 +11,26 @@ class LoremIpsumController extends Controller {
         # Put anything here that should happen before any of the other actions
     }
 
-    /**
-    * Responds to requests to GET /books
-    */
-    public function getIndex() {
-        return view('LoremIpsum.index');
+
+    public function getCreate() {
+        return view('LoremIpsum.create');
     }
 
-    /**
-     * Responds to requests to GET /books/show/{id}
-     */
-    public function getShow() {
-      return view('LoremIpsum.show');
-    }
 
-    /**
+    public function postCreate(Request $request) {
+      $this->validate(
+      $request,
+      ['numpara => required|integer|between:1,99']
+    );
+    return view('LoremIpsum.create')->with(['paragraphs'=>$paragraphs, 'request'=>$request]);
+  }
+  /**
      * Responds to requests to GET /books/create
      */
-    public function getCreate() {
-        return 'Form to create a new book';
-    }
+
 
     /**
      * Responds to requests to POST /books/create
      */
-    public function postCreate() {
-        return 'Process adding new book';
-    }
+
 }
