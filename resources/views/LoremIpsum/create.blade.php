@@ -29,11 +29,6 @@
    <button type="submit" class="btn btn-primary">Generate</button>
   </form>
 
-<?php
-$generator = new Badcow\LoremIpsum\Generator();
-$paragraphs = $generator->getParagraphs('numpara');
-echo implode('<p>', $paragraphs); ?>
-
 @stop
 
 

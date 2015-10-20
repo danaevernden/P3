@@ -23,12 +23,8 @@ Route::get('/', 'MasterController@getIndex');
 
 Route::get('/loremipsum', 'LoremIpsumController@getCreate');
 Route::post('/loremipsum', 'LoremIpsumController@postCreate');
-
 Route::get('/usergenerator', 'UserGenController@getIndex');
 Route::post('/usergenerator', 'UserGenController@postIndex');
-
-Route::get('/pwordgenerator', 'PwordGenController@getIndex');
-
 /*packages*/
 Route::get('/practice', function() {
 

@@ -18,11 +18,15 @@ class LoremIpsumController extends Controller {
 
 
     public function postCreate(Request $request) {
-      $this->validate(
-      $request,
-      ['numpara => required|integer|between:1,99']
-    );
-    return view('LoremIpsum.create')->with(['paragraphs'=>$paragraphs, 'request'=>$request]);
+/*validation*/
+      $this->validate($request,[
+        'numpara => required|integer|between:1,99'
+        ]);
+        $input=$request->input('numpara');
+/*paragraph generation*/
+        $generator = new Badcow\LoremIpsum\Generator();
+        $paragraphs = $generator->getParagraphs($input);
+    return view('LoremIpsum.create')->with('paragraphs', $paragraphs);
   }
   /**
      * Responds to requests to GET /books/create
