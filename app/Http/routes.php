@@ -22,15 +22,13 @@ Route::get('practice', function(){
 Route::get('/', 'MasterController@getIndex');
 
 Route::get('/loremipsum', 'LoremIpsumController@getCreate');
-Route::post('/loremipsum', 'LoremIpsumController@postCreate');
+Route::post('/loremipsum', 'LoremIpsumController@postIndex');
 Route::get('/usergenerator', 'UserGenController@getIndex');
 Route::post('/usergenerator', 'UserGenController@postIndex');
+
 /*packages*/
 Route::get('/practice', function() {
-
     $random = new Rych\Random\Random();
     return $random->getRandomString(8);
-
 });
-
 Route::get('/logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');

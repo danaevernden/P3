@@ -1,5 +1,5 @@
 
-# P2: xkcd Password Generator
+# P3: Developer's Best Friend
 ##Live URL
 [P3]
 ##Description
@@ -27,6 +27,14 @@ Features:
 [favicon generator]: <http://www.favicon-generator.org/>
 
 // to do
-1. get p3.danaevernden.com working
-2. download 2 packages
-3. add password generator to dev's bff
+1. get new css formats working on server
+2. update readme
+3. error check code/validate
+4. determine if mastercontroller is needed
+5. get usergen working
+6. record screencast
+7. resize banner
+8. format CSS more
+9. prevent logs from showing up on prod env
+10. clean up code and comments
+11. retaining entries on usergen form

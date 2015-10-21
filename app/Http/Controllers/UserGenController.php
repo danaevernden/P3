@@ -17,33 +17,28 @@ class UserGenController extends Controller {
     }
 
 
-//public function postIndex($numUsers = null){
-  //return 'numusers: '.$numUsers;
-//}
-
-
   public function postIndex(Request $request) {
-    //validation
+    /*validation*/
     $this->validate($request,[
-      'numpara => required|integer|between:1,99'
+      'numUsers' => 'required|integer|between:1,99'
       ]);
-
       $input=$request->input('numUsers');
-    //user generation
-  $faker = Faker\Factory::create();
+      $city=$request->input('inclCity');
+      $stateAbbr=$request->input('inclState');
 
-  for ($i=0; $i < $numUsers; $i++) {
-    echo $faker->name, "\n";
-    echo $faker->address;
+    /*user generation*/
+    $faker = \Faker\Factory::create();
+    $myfakes = array();
+
+    for ($i=0; $i < $input; $i++) {
+      $myfakes['name'][$i] = $faker->name;
+      if(isset($city)){
+        $myfakes['city'][$i] = $faker->city;
+      }
+      if(isset($stateAbbr)){
+        $myfakes['stateAbbr'][$i] = $faker->stateAbbr;
+      }
+    }
+    return view('UserGen.postindex')->with('myfakes', $myfakes);
   }
 }
-}
-  // generate data by accessing properties
-    // 'Lucy Cechtelar';
-    // "426 Jordy Lodge
-    // Cartwrightshire, SC 88120-6700"
-
-    // Dolores sit sint laboriosam dolorem culpa et autem. Beatae nam sunt fugit
-    // et sit et mollitia sed.
-    // Fuga deserunt tempora facere magni omnis. Omnis quia temporibus laudantium
-    // sit minima sint.

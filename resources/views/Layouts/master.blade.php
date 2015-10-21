@@ -1,27 +1,22 @@
 <!doctype html>
 <html>
-<head>
+  <head>
+      <meta charset='utf-8'>
+      <link href="/css/style.css" type='text/css' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+      <link rel="shortcut icon" href="/images/favicon.ico">
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      @yield('head')
+  </head>
 
-    <meta charset='utf-8'>
-    <link href="/css/style.css" type='text/css' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" href="/images/favicon.ico">
-    @yield('head')
-</head>
-<body>
-
+  <body>
       @yield('header')
-
-    <div class="content">
+      <div class="content">
       @yield('content')
-    </div>
+      </div>
       @yield('body')
-
-    <footer>
-      @yield('footer')
-      </footer>
-
-
-
-</body>
+      <footer>
+        @yield('footer')
+        </footer>
+  </body>
 </html>

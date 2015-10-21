@@ -1,14 +1,10 @@
-.section{
-
-  font-size:50px;
-}
 
 .banner{
-  border-style: dashed;
+  border-style:dashed;
   border-width: 2px;
   font-size:70px;
-/*  background-color: rgb(192,18,11);*/
   background-image: url("/images/snow-background.jpg");
+  background-size:1000px 200px;
   height:180px;
   font-family: 'Pacifico', cursive;
   color: rgb(0,0,0);
@@ -21,7 +17,6 @@
 .subbanner{
   font-size:30px;
   border-bottom:50px;
-
 }
 
 .subsubbanner{
@@ -29,8 +24,9 @@
     color: rgb(255,255,255);
     text-align:center;
     border-style:solid;
-    border-width: 2px;
+    height:130px;
     border-color: rgb(0,0,0);
+    font-size:20px;
 }
 
 .Maincontent{
@@ -39,12 +35,9 @@
   text-align:center;
 }
 
-.containerpword{
-font-family: "Comic Sans MS";
-margin:auto;
-width:100%;
-text-align:center;
-font-size:16px;
+#explain{
+  max-width:50%;
+  margin-botton:20px;
 }
 
 /*images*/
@@ -54,29 +47,4 @@ font-size:16px;
 
 .button{
 height:50px;
-}
-
-.arrow{
-  height:80px;
-}
-
-.arrow2{
-  height:110px;
-}
-
-.hatguy{
-  width:20px;
-}
-
-.comic{
-max-width: 100%;
-position: fixed;
-margin-left:8em;
-margin-right:8em;
-}
-
-.polo{
-height: 100px;
-width: 100px;
-align-items:flex-end;
 }
