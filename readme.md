@@ -38,3 +38,5 @@ Features:
 9. prevent logs from showing up on prod env
 10. clean up code and comments
 11. retaining entries on usergen form
+12. validation not working on server
+13. refresh P1 on git and DO

@@ -10,28 +10,32 @@
 @stop
 
 @section('content')
-<?php function keepselection($number, $selectionName){
-      if(isset($_GET[$selectionName]) and $_GET[$selectionName]==$number)
-      {echo "selected='selected'";}
-    }
-      function keepselectionB($selectionName2){
-        if(isset($_GET[$selectionName2]))
-        {echo "checked='checked'";}
-    }
-?>
+
+@if(count($errors) > 0)
+  <ul>
+      @foreach ($errors->all() as $error)
+          <li>{{ $error }}</li>
+      @endforeach
+  </ul>
+@endif
+
   <form method='POST' action='/usergenerator'>
       <input type='hidden' value='{{ csrf_token() }}' name='_token'>
       <fieldset>
          <label for='numUsers'>Number of users (max 99):</label>
          <input type="text" id='numUsers' name="numUsers">
-         <input type="checkbox" name="inclCity"
-         <?php keepselectionB('inclCity') ?>
-         >
          Include city
-         <input type="checkbox" name="inclState"
-         <?php keepselectionB('inclState') ?>
-         >
+         <select name="inclCity">
+           <option value="1">Nah</option>
+           <option value="2">Yeah!</option>
+          </select>
+          Include State
+          <select name="inclState">
+          Include city
+          <option value="1">Nah</option>
+          <option value="2">Yeah!</option>
          Include state
+       </select>
       </fieldset>
    <br>
    <button type="submit" class="btn btn-primary">Generate</button>

@@ -20,11 +20,11 @@ class UserGenController extends Controller {
   public function postIndex(Request $request) {
     /*validation*/
     $this->validate($request,[
-      'numUsers' => 'required|integer|between:1,99'
+      'numUsers' => 'required|numeric|min:1|max:99'
       ]);
       $input=$request->input('numUsers');
       $city=$request->input('inclCity');
-      $stateAbbr=$request->input('inclState');
+      $state=$request->input('inclState');
 
     /*user generation*/
     $faker = \Faker\Factory::create();
@@ -32,13 +32,35 @@ class UserGenController extends Controller {
 
     for ($i=0; $i < $input; $i++) {
       $myfakes['name'][$i] = $faker->name;
-      if(isset($city)){
+      if($city==2){
         $myfakes['city'][$i] = $faker->city;
       }
-      if(isset($stateAbbr)){
-        $myfakes['stateAbbr'][$i] = $faker->stateAbbr;
+      if($state==2){
+        $myfakes['state'][$i] = $faker->state;
       }
     }
-    return view('UserGen.postindex')->with('myfakes', $myfakes);
+    $i=0;
+    $newstring='';
+
+    for($i=0; $i < $input; $i++){
+      $newstring=$newstring.$myfakes['name'][$i].'<br> ';
+      if($city==1 && $state==1){
+        $newstring=$newstring.'<br>';
+      }
+      if($city==2){
+        if($state==2){
+          $newstring=$newstring.$myfakes['city'][$i].', ';
+        }
+        else{
+          $newstring=$newstring.$myfakes['city'][$i].'<br><br>';
+        }
+      }
+      elseif($state==2){
+        $newstring = $newstring.$myfakes['state'][$i].'<br><br>';
+      }
+    }
+
+  return view('UserGen.postindex')->with('newstring', $newstring);
+
   }
 }

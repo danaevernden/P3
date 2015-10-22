@@ -20,7 +20,7 @@ class LoremIpsumController extends Controller {
 
       /*validation*/
       $this->validate($request,[
-        'numpara' => 'required|integer|between:1,99'
+        'numpara' => 'required|integer|max:99'
         ]);
         $input=$request->input('numpara');
 

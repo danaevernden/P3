@@ -10,15 +10,9 @@
 @stop
 
 @section('content')
-  @if(count($errors) > 0)
-    <ul>
-        @foreach ($errors->all() as $error)
-            <li>{{ $error }}</li>
-        @endforeach
-    </ul>
-  @endif
+
   <br>
-  <a href="/"><img src="/images/back.png" class="button" title="Back to Paragraph Generator" alt="homebutton"></a>
+  <a href="/loremipsum"><img src="/images/back.png" class="button" title="Back to Paragraph Generator" alt="homebutton"></a>
   <br>
   <br>
   <?php echo implode('<p>', $paragraphs); ?>
