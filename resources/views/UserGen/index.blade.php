@@ -22,7 +22,7 @@
   <form method='POST' action='/usergenerator'>
       <input type='hidden' value='{{ csrf_token() }}' name='_token'>
       <fieldset>
-         <label for='numUsers'>Number of users (max 99):</label>
+         Number of users (max 99):
          <input type="text" name="numUsers">
          Include city
          <select name="inclCity">
