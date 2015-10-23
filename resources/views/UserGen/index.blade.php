@@ -11,19 +11,19 @@
 
 @section('content')
 
-@if(count($errors) > 0)
-  <ul>
-      @foreach ($errors->all() as $error)
-          <li>{{ $error }}</li>
-      @endforeach
-  </ul>
-@endif
+  @if(count($errors) > 0)
+    <ul>
+        @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+        @endforeach
+    </ul>
+  @endif
 
   <form method='POST' action='/usergenerator'>
       <input type='hidden' value='{{ csrf_token() }}' name='_token'>
       <fieldset>
          <label for='numUsers'>Number of users (max 99):</label>
-         <input type="text" id='numUsers' name="numUsers">
+         <input type="text" name="numUsers">
          Include city
          <select name="inclCity">
            <option value="1">Nah</option>

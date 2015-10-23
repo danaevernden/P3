@@ -21,13 +21,13 @@ class LoremIpsumController extends Controller {
       /*validation*/
       $this->validate($request,[
         'numpara' => 'required|integer|max:99'
-        ]);
-        $input=$request->input('numpara');
+      ]);
+      $input=$request->input('numpara');
 
         /*paragraph generation*/
-        $generator = new \Badcow\LoremIpsum\Generator();
-        $paragraphs = $generator->getParagraphs($input);
-        return view('LoremIpsum.index')->with('paragraphs', $paragraphs);
+      $generator = new \Badcow\LoremIpsum\Generator();
+      $paragraphs = $generator->getParagraphs($input);
+      return view('LoremIpsum.index')->with('paragraphs', $paragraphs);
 
   }
 }

@@ -22,9 +22,10 @@ Route::get('/loremipsum', 'LoremIpsumController@getCreate');
 Route::post('/loremipsum', 'LoremIpsumController@postIndex');
 Route::get('/usergenerator', 'UserGenController@getIndex');
 Route::post('/usergenerator', 'UserGenController@postIndex');
-/*may remove pwordgen*/
 Route::get('/passwordgenerator', 'PwordGenController@getIndex');
 Route::post('/passwordgenerator', 'PwordGenController@postIndex');
+
+
 
 if(App::environment('local')) {
   /*fun packages and local env packages*/

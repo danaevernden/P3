@@ -18,7 +18,6 @@
   </ul>
 @endif
 
-{{old('numpara')}}
   <form method='POST' action='/loremipsum'>
       <input type='hidden' value='{{ csrf_token() }}' name='_token'>
       <fieldset>

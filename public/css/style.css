@@ -45,7 +45,11 @@
 
 .passwordbox{
   background-color:rgb(79,131,189);
+  color: rgb(255,255,255);
   font-family: 'helvetica';
+  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-left: 20px;
   font-size:20px;
   height:40px;
 }

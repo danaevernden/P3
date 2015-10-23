@@ -10,7 +10,7 @@
 @stop
 
 @section('content')
-  <a href="/usergenerator"><img src="/images/back.png" class="button" title="Back to Paragraph Generator" alt="homebutton"></a>
+  <a href="/usergenerator"><img src="/images/back.png" class="button" title="Back to User Generator" alt="homebutton"></a>
   <br>
   <br>
   <?php
@@ -20,5 +20,7 @@
 @section('footer')
   <br>
   <br>
-  <a href="/"><img src="/images/homebutton.png" class="button" title="Back to home" alt="homebutton">
+  <a href="/">
+    <img src="/images/homebutton.png" class="button" title="Back to home" alt="homebutton">
+  </a>
 @stop

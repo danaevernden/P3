@@ -22,6 +22,7 @@ class PwordGenController extends Controller {
       $this->validate($request,[
         'numWords' => 'required|numeric|min:1|max:9'
       ]);
+
       #initialiing variables
       $numWords=$request->input('numWords');
       $uppercase=$request->input('uppercase');
@@ -55,25 +56,24 @@ class PwordGenController extends Controller {
         # if uppercase is specified, change letters to uppercase
         if(null!==$uppercase){
             $password = strtoupper($password);
-          }
         }
+      }
 
         # if the number box is checked, append a random number to the
         # end of the password
-
-        if (null!==$inclNumber) {
-            for ($i=1; $i < $numNumber +1; $i++){
-            $password = $password.rand(0,9);
-            }
+      if (null!==$inclNumber) {
+        for ($i=1; $i < $numNumber +1; $i++){
+        $password = $password.rand(0,9);
         }
+      }
         # if the symbols box is checked, append a random symbol to the
         # end of the password
-        if (null!==$inclSymbol) {
-            for($i=1; $i <$numSymbol+1;$i++){
-            $password = $password.$symbols[rand(0,5)];
-            }
+      if (null!==$inclSymbol) {
+        for($i=1; $i <$numSymbol+1;$i++){
+        $password = $password.$symbols[rand(0,5)];
         }
+      }
 
-  return view('PwordGen.postindex')->with('password', $password);
+      return view('PwordGen.postindex')->with('password', $password);
   }
 }

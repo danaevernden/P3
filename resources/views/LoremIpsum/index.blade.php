@@ -15,7 +15,8 @@
   <a href="/loremipsum"><img src="/images/back.png" class="button" title="Back to Paragraph Generator" alt="homebutton"></a>
   <br>
   <br>
-  <?php echo implode('<p>', $paragraphs); ?>
+  <?php echo implode('<p>', $paragraphs);?>
+    
 @stop
 
 

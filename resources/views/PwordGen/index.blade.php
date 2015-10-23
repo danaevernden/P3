@@ -71,7 +71,6 @@
   <br><br>
   <a href="http://xkcd.com/936/"> xkcd Password Strength comic </a>
 
-
 @stop
 
 @section('footer')

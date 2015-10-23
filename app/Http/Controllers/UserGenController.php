@@ -39,23 +39,25 @@ class UserGenController extends Controller {
         $myfakes['state'][$i] = $faker->state;
       }
     }
-    $i=0;
     $newstring='';
 
     for($i=0; $i < $input; $i++){
       $newstring=$newstring.$myfakes['name'][$i].'<br> ';
+      /*if no city and state*/
       if($city==1 && $state==1){
         $newstring=$newstring.'<br>';
       }
-      if($city==2){
-        if($state==2){
-          $newstring=$newstring.$myfakes['city'][$i].', ';
-        }
-        else{
-          $newstring=$newstring.$myfakes['city'][$i].'<br><br>';
-        }
+      /*if both city and state*/
+      if($city==2 && $state==2){
+        $newstring=$newstring.$myfakes['city'][$i].', '.
+        $myfakes['state'][$i].'<br><br>';
       }
-      elseif($state==2){
+      /*if just city*/
+      elseif($city==2 && $state==1){
+        $newstring=$newstring.$myfakes['city'][$i].'<br><br>';
+      }
+      /*if just state*/
+      elseif($city==1 && $state==2){
         $newstring = $newstring.$myfakes['state'][$i].'<br><br>';
       }
     }
