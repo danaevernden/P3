@@ -66,7 +66,7 @@
   <br>
   <br>
   <a href="http://xkcd.com/936/" target="_blank">
-    <img src="/images/xkcd comic.png" title="comic" class="comic" alt ="comic" style="max-width:500px;"/>
+    <img src="/images/xkcdcomic.png" title="comic" class="comic" alt ="comic" style="max-width:500px;"/>
   </a>
   <br><br>
   <a href="http://xkcd.com/936/"> xkcd Password Strength comic </a>
