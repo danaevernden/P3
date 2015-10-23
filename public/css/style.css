@@ -41,7 +41,6 @@
 
 #explain{
   max-width:50%;
-  margin-botton:20px;
 }
 
 /*images*/
@@ -49,6 +48,9 @@
   height:100px;
 }
 
+.hatguy{
+  height:14px;
+}
 .button{
 height:50px;
 }

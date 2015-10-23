@@ -2,19 +2,18 @@
 
 @section('header')
   <div class="banner">
-      User Generator
+      Password Generator
     <div class="subbanner">
-      Fake, random, yet necessary
+      Random, yet necessary
     </div>
   </div>
 @stop
 
 @section('content')
-  <a href="/usergenerator"><img src="/images/back.png" class="button" title="Back to Paragraph Generator" alt="homebutton"></a>
+  <a href="/passwordgenerator"><img src="/images/back.png" class="button" title="Back to Paragraph Generator" alt="homebutton"></a>
   <br>
   <br>
-  <?php
-  echo $newstring;?>
+  <?php echo $password;?>
 @stop
 
 @section('footer')
