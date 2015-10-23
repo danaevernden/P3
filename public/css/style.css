@@ -4,7 +4,7 @@
   border-width: 2px;
   font-size:70px;
   background-image: url("/images/snow-background.jpg");
-  background-size:1000px 200px;
+  background-size:1600px 200px;
   height:180px;
   font-family: 'Pacifico', cursive;
   color: rgb(0,0,0);
@@ -29,6 +29,10 @@
     font-size:20px;
 }
 
+.content2{
+  font-family: 'helvetica';
+  font-size:14px;
+}
 .Maincontent{
   font-family: 'helvetica';
   font-weight: bold;

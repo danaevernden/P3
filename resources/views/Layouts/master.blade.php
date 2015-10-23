@@ -11,8 +11,8 @@
 
   <body>
       @yield('header')
-      <div class="content">
-      @yield('content')
+      <div class="content2">
+        @yield('content')
       </div>
       @yield('body')
       <footer>
