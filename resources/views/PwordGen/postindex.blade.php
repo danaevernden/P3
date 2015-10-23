@@ -13,11 +13,15 @@
   <a href="/passwordgenerator"><img src="/images/back.png" class="button" title="Back to Paragraph Generator" alt="homebutton"></a>
   <br>
   <br>
-  <?php echo $password;?>
+  <div class="passwordbox">
+    <?php echo $password;?>
+  </div>
 @stop
 
 @section('footer')
   <br>
   <br>
-  <a href="/"><img src="/images/homebutton.png" class="button" title="Back to home" alt="homebutton">
+  <a href="/">
+    <img src="/images/homebutton.png" class="button" title="Back to home" alt="homebutton">
+  </a>
 @stop

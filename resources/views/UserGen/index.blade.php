@@ -31,11 +31,9 @@
           </select>
           Include State
           <select name="inclState">
-          Include city
           <option value="1">Nah</option>
           <option value="2">Yeah!</option>
-         Include state
-       </select>
+        </select>
       </fieldset>
    <br>
    <button type="submit" class="btn btn-primary">Generate</button>
@@ -45,5 +43,7 @@
 @section('footer')
   <br>
   <br>
-  <a href="/"><img src="/images/homebutton.png" class="button" title="Back to home" alt="homebutton">
+  <a href="/">
+    <img src="/images/homebutton.png" class="button" title="Back to home" alt="homebutton">
+  </a>
 @stop

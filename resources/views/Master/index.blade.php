@@ -21,7 +21,9 @@
   <br>
   <img src="/images/page.png" class="icon" title="icon!" alt="icon"/>
   <br>
-  Need filler text? Try the Paragraph Generator!
+  <div class="advert">
+    Need filler text? Try the Paragraph Generator!
+  </div>
   <br>
   <a href="/loremipsum"><img src="/images/clickme.png" class="button" title="Click me!" alt="clickme"></a>
   <br>
@@ -37,7 +39,9 @@
   <br>
   <img src="/images/people.png" class="icon" title="icon!" alt="icon"/>
   <br>
-  Need random users? Try the User Generator!
+  <div class="advert">
+    Need random users? Try the User Generator!
+  </div>
   <br>
   <a href="/usergenerator"><img src="/images/clickme.png" class="button" title="Click me!" alt="clickme"></a>
   <br>
@@ -51,7 +55,9 @@
   <br>
   <img src="/images/pword.png" class="icon" title="icon!" alt="icon"/>
   <br>
-  Need a random password? Try the Password Generator!
+  <div class="advert">
+    Need a random password? Try the Password Generator!
+  </div>
   <br>
   <a href="/passwordgenerator"><img src="/images/clickme.png" class="button" title="Click me!" alt="clickme"></a>
   <br>

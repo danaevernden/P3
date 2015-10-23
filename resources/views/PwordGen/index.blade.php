@@ -22,10 +22,8 @@
   <form method='POST' action='/passwordgenerator'>
       <input type='hidden' value='{{ csrf_token() }}' name='_token'>
       <fieldset>
-        <label for='numWords'>Number of words (max 9):</label>
+        Number of words (max 9):
         <select name="numWords">
-          <option value="1">1</option>
-          <option value="2">2</option>
           <option value="3">3</option>
           <option value="4">4</option>
           <option value="5">5</option>
@@ -61,7 +59,6 @@
          <input type="checkbox" name="uppercase">
           All uppercase?
          <br><br>
-       </select>
       </fieldset>
    <br>
    <button type="submit" class="btn btn-primary">Generate</button>
@@ -80,5 +77,7 @@
 @section('footer')
   <br>
   <br>
-  <a href="/"><img src="/images/homebutton.png" class="button" title="Back to home" alt="homebutton">
+  <a href="/">
+    <img src="/images/homebutton.png" class="button" title="Back to home" alt="homebutton">
+  </a>
 @stop

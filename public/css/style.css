@@ -43,6 +43,16 @@
   max-width:50%;
 }
 
+.passwordbox{
+  background-color:rgb(79,131,189);
+  font-family: 'helvetica';
+  font-size:20px;
+  height:40px;
+}
+
+.advert{
+  color:rgb(79,131,189);
+}
 /*images*/
 .olaf{
   height:100px;

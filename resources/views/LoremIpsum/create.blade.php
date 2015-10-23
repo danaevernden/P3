@@ -35,5 +35,7 @@
 @section('footer')
   <br>
   <br>
-  <a href="/"><img src="/images/homebutton.png" class="button" title="Back to home" alt="homebutton">
+  <a href="/">
+    <img src="/images/homebutton.png" class="button" title="Back to home" alt="homebutton">
+  </a>
 @stop
